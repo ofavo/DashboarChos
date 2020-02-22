@@ -1,0 +1,18 @@
+<nb-layout>
+  <nb-layout-header fixed>
+   <button nbButton   (click)="toggle()">Toggle</button>&nbsp; &nbsp; <h4>Dashboar</h4> 
+  
+    <img class="imgProfile" src="../../../assets/images/CAM00005.jpg">
+  </nb-layout-header>
+
+  <nb-sidebar tag="left">
+  <nb-card>
+  <nb-menu [items]="items">
+  </nb-menu>
+</nb-card>
+
+  </nb-sidebar>
+ 
+
+  <nb-layout-column class="colored-column-warning"> <router-outlet></router-outlet></nb-layout-column>
+</nb-layout>
